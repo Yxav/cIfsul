@@ -1,0 +1,136 @@
+object Form1: TForm1
+  Left = 722
+  Height = 341
+  Top = 168
+  Width = 452
+  Caption = 'Form1'
+  ClientHeight = 341
+  ClientWidth = 452
+  LCLVersion = '2.0.2.0'
+  object rgLanches: TRadioGroup
+    Left = 11
+    Height = 105
+    Top = 13
+    Width = 185
+    AutoFill = True
+    Caption = 'Lanches'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 85
+    ClientWidth = 181
+    Items.Strings = (
+      'Bauru'
+      'Hot-Dog'
+      'Torrada'
+    )
+    OnSelectionChanged = rgLanchesSelectionChanged
+    TabOrder = 0
+  end
+  object cgAddit: TCheckGroup
+    Left = 12
+    Height = 105
+    Top = 124
+    Width = 185
+    AutoFill = True
+    Caption = 'Adicionais'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 85
+    ClientWidth = 181
+    Items.Strings = (
+      'Ovo'
+      'Queijo'
+    )
+    TabOrder = 1
+    Data = {
+      020000000202
+    }
+    object cbSalsicha: TCheckBox
+      Left = 6
+      Height = 23
+      Top = 56
+      Width = 169
+      Caption = 'Salsicha'
+      TabOrder = 2
+    end
+  end
+  object cbFideli: TCheckBox
+    Left = 246
+    Height = 19
+    Top = 87
+    Width = 150
+    Caption = 'Cliente Fidelidade (10 %)'
+    OnChange = btPedidoClick
+    TabOrder = 2
+  end
+  object edValorT: TEdit
+    Left = 344
+    Height = 23
+    Top = 37
+    Width = 80
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object edValorP: TEdit
+    Left = 344
+    Height = 23
+    Top = 124
+    Width = 80
+    ReadOnly = True
+    TabOrder = 4
+  end
+  object Label1: TLabel
+    Left = 277
+    Height = 15
+    Top = 39
+    Width = 57
+    Caption = 'Valor total:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 264
+    Height = 15
+    Top = 125
+    Width = 72
+    Caption = 'Valor a pagar:'
+    ParentColor = False
+  end
+  object btPedido: TButton
+    Left = 268
+    Height = 66
+    Top = 168
+    Width = 160
+    Caption = 'Realizar Pedido'
+    OnClick = btPedidoClick
+    TabOrder = 5
+  end
+  object Button2: TButton
+    Left = 150
+    Height = 25
+    Top = 274
+    Width = 75
+    Caption = 'Limpar'
+    OnClick = Button2Click
+    TabOrder = 6
+  end
+  object Button3: TButton
+    Left = 243
+    Height = 25
+    Top = 274
+    Width = 75
+    Caption = 'Sair'
+    OnClick = Button3Click
+    TabOrder = 7
+  end
+end
