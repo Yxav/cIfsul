@@ -1,0 +1,94 @@
+object Form1: TForm1
+  Left = 249
+  Height = 249
+  Top = 228
+  Width = 492
+  Caption = 'Form1'
+  ClientHeight = 249
+  ClientWidth = 492
+  LCLVersion = '2.0.4.0'
+  object lbIt: TListBox
+    Left = 296
+    Height = 159
+    Top = 33
+    Width = 176
+    Items.Strings = (
+      'Num.It  Quant.It Nome.It'
+    )
+    ItemHeight = 15
+    TabOrder = 0
+  end
+  object edQIt: TEdit
+    Left = 88
+    Height = 23
+    Top = 33
+    Width = 80
+    TabOrder = 1
+  end
+  object edNIt: TEdit
+    Left = 88
+    Height = 23
+    Top = 64
+    Width = 80
+    TabOrder = 2
+  end
+  object btSendIt: TButton
+    Left = 176
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'Mandar'
+    OnClick = btSendItClick
+    TabOrder = 3
+  end
+  object btClear: TButton
+    Left = 296
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = 'Limpar'
+    OnClick = btClearClick
+    TabOrder = 4
+  end
+  object Button3: TButton
+    Left = 397
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = 'Sair'
+    OnClick = Button3Click
+    TabOrder = 5
+  end
+  object edQMIt: TEdit
+    Left = 16
+    Height = 23
+    Top = 112
+    Width = 32
+    ReadOnly = True
+    TabOrder = 6
+  end
+  object edNMIt: TEdit
+    Left = 56
+    Height = 23
+    Top = 112
+    Width = 195
+    ReadOnly = True
+    TabOrder = 7
+  end
+  object Quantidade: TLabel
+    Left = 16
+    Height = 15
+    Top = 33
+    Width = 65
+    Caption = 'Quantidade:'
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 64
+    Width = 27
+    Caption = 'Item:'
+    ParentColor = False
+  end
+end
