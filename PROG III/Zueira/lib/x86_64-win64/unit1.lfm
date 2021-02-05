@@ -1,0 +1,39 @@
+object Form1: TForm1
+  Left = 651
+  Height = 238
+  Top = 356
+  Width = 320
+  Caption = 'Koala - v0.1 - JDSoftware'
+  ClientHeight = 238
+  ClientWidth = 320
+  OnCreate = FormCreate
+  LCLVersion = '2.0.2.0'
+  object Button1: TButton
+    Left = 209
+    Height = 31
+    Top = 207
+    Width = 111
+    Caption = 'Clique em mim!'
+    OnClick = Button1Click
+    OnMouseMove = Button1MouseMove
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 31
+    Height = 36
+    Top = 42
+    Width = 99
+    Caption = 'PROG3'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -29
+    Font.Name = 'Showcard Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    OnMouseEnter = Label1MouseEnter
+    OnMouseLeave = Label1MouseLeave
+  end
+end
